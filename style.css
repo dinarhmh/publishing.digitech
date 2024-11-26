@@ -1239,7 +1239,7 @@ th{
 
 /* Styling Billboard */
 #billboard {
-  height: 100vh; /* Tetap gunakan viewport tinggi untuk desktop */
+  height: auto; /* Tetap gunakan viewport tinggi untuk desktop */
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -1252,23 +1252,22 @@ th{
   object-fit: cover;
   width: 100%;
   height: auto; /* Default untuk mempertahankan proporsi gambar */
-  max-height: 100vh; /* Batasi tinggi maksimum */
+  max-height: auto; /* Batasi tinggi maksimum */
 }
 
 /* Media Query untuk Mobile */
 @media (max-width: 767px) {
   #billboard {
-    height: 400px; /* Mengurangi tinggi untuk layar kecil */
-    margin: 0 20px; /* Mengurangi margin untuk perangkat mobile */
+    height: auto; /* Allow height to adjust */
   }
-
+  .swiper-container {
+    height: auto; /* Adjust for content */
+  }
   .swiper-slide img {
-    object-fit: cover;
-    width: 100%;
-    height: auto; /* Gambar tetap proporsional */
-    max-height: 50vh; /* Batasi tinggi maksimum gambar di mobile */
+    height: auto;
   }
 }
+
 
 
 
@@ -1999,6 +1998,7 @@ strong {
   flex-wrap: wrap;
   padding: 20px;
 }
+
 
 .form-section, .info-section {
   flex: 1;
