@@ -235,7 +235,7 @@
                       <a href="visi misi.html" class="dropdown-item fw-light">Visi Misi</a>
                     </li>
                     <li>
-                      <a href="inovasi.html" class="dropdown-item fw-light">Inovasi Berkelanjutan</a>
+                      <a href="sejarah.html" class="dropdown-item fw-light">Sejarah</a>
                     </li>
                   </ul>
                 </li>
@@ -301,7 +301,59 @@
     </header>
 
 
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    
+
+    <section id="best-selling-items" class="position-relative padding-large ">
+      <div class="container">
+        <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
+          <h3 class="d-flex align-items-center">Book Chapter</h3>
+        </div>
+
+        <div class="sectionn" tabindex="0">
+            <div class="sectionn-title" onclick="toggleDetail(this)">JUDUL CHAPTER</div>
+            <div class="sectionn-content">
+              <div class="editor">EDITOR: Nama Lengkap, Gelar</div>
+              <div class="chapter">BAB 1. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="chapter">BAB 2. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="chapter">BAB 3. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="chapter">BAB 4. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="chapter">BAB 5. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="deadline">Tanggal Deadline: 30 November 2024</div>
+              <div class="contact">Hubungi PJ: <a href="#">Editor (WhatsApp)</a></div>
+            </div>
+        </div>
+    
+        <div class="sectionn" tabindex="0">
+            <div class="sectionn-title" onclick="toggleDetail(this)">JUDUL CHAPTER</div>
+            <div class="sectionn-content">
+              <div class="editor">EDITOR: Nama Lengkap, Gelar</div>
+              <div class="chapter">BAB 1. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="chapter">BAB 2. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="chapter">BAB 3. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="chapter">BAB 4. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="chapter">BAB 5. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="deadline">Tanggal Deadline: 30 November 2024</div>
+              <div class="contact">Hubungi PJ: <a href="#">Editor (WhatsApp)</a></div>
+            </div>
+        </div>
+    
+        <div class="sectionn" tabindex="0">
+            <div class="sectionn-title" onclick="toggleDetail(this)">JUDUL CHAPTER</div>
+            <div class="sectionn-content">
+              <div class="editor">EDITOR: Nama Lengkap, Gelar</div>
+              <div class="chapter">BAB 1. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="chapter">BAB 2. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="chapter">BAB 3. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="chapter">BAB 4. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="chapter">BAB 5. JUDUL - <span> Kosong</span> (<a href="#">Booking</a>)</div>
+              <div class="deadline">Tanggal Deadline: 30 November 2024</div>
+              <div class="contact">Hubungi PJ: <a href="#">Editor (WhatsApp)</a></div>
+            </div>
+        </div>
+
+
+      </div>
+    </section>
 
 
 
@@ -382,5 +434,16 @@
         crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
+
+      <script>
+        function toggleDetail(element) {
+          const content = element.nextElementSibling; // Ambil elemen detail (sectionn-content)
+          if (content.classList.contains('active')) {
+            content.classList.remove('active'); // Sembunyikan jika aktif
+          } else {
+            content.classList.add('active'); // Tampilkan jika tidak aktif
+          }
+        }
+      </script>
     </body>
   </html>

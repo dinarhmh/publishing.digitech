@@ -17,6 +17,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -235,7 +239,7 @@
                       <a href="visi misi.html" class="dropdown-item fw-light">Visi Misi</a>
                     </li>
                     <li>
-                      <a href="inovasi.html" class="dropdown-item fw-light">Inovasi Berkelanjutan</a>
+                      <a href="sejarah.html" class="dropdown-item fw-light">Sejarah</a>
                     </li>
                   </ul>
                 </li>
@@ -300,74 +304,138 @@
 
     </header>
 
-    <section id="billboard" class="position-relative d-flex align-items-center py-5 bg-light-gray"
-      style="background-image: url(images/banner1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; height: 800px;">
-      <div class="position-absolute end-0 pe-0 pe-xxl-5 me-0 me-xxl-5 swiper-next main-slider-button-next">
-        <svg class="chevron-forward-circle d-flex justify-content-center align-items-center p-2" width="80" height="80">
-          <use xlink:href="#alt-arrow-right-outline"></use>
-        </svg>
+    <section id="billboard" class="position-relative d-flex align-items-center"
+      style="height: 650px; margin: 0 115px;">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <img src="images/banner1.jpg" alt="Banner 1" style="width: 100%; height: auto;">
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <img src="images/banner2.jpg" alt="Banner 2" style="width: 100%; height: auto;">
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <img src="images/banner3.jpg" alt="Banner 3" style="width: 100%; height: auto;">
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <img src="images/banner4.jpg" alt="Banner 1" style="width: 100%; height: auto;">
+          </div>
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <img src="images/banner5.jpg" alt="Banner 2" style="width: 100%; height: auto;">
+          </div>
+          <!-- Slide 6 -->
+          <div class="swiper-slide">
+            <img src="images/banner6.jpg" alt="Banner 3" style="width: 100%; height: auto;">
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-      <div class="position-absolute start-0 ps-0 ps-xxl-5 ms-0 ms-xxl-5 swiper-prev main-slider-button-prev">
-        <svg class="chevron-back-circle d-flex justify-content-center align-items-center p-2" width="80" height="80">
-          <use xlink:href="#alt-arrow-left-outline"></use>
-        </svg>
-      </div>
-      
     </section>
+
+
 
   
 
     
 
     
-
-    
-
-    
-
-    <section id="latest-posts" class="padding-large">
+    <section id="best-selling-items" class="position-relative padding-large ">
       <div class="container">
         <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
-          <h3 class="d-flex align-items-center">Berita Populer</h3>
+          <h3 class="d-flex align-items-center">Buku Terbaru</h3>
         </div>
-        <div class="row">
+        
 
-          <div class="col-md-3 posts mb-4">
-            <img src="images/post-item4.jpg" alt="post image" class="img-fluid rounded-3">
-            <a href="index.html" class="fs-6" style="color: #336699">01-01-2024</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">Lorem ipsum dolor sit amet, adipiscing</a></h4>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
-              <span><a class="text-decoration-underline text-black-50" href="index.html">Selengkapnya</a></span>
-            </p>
+          <div class="row">
+            <div class="col-12 col-md-3 mb-4">
+              <div class="card-container position-relative">
+                <div class="card position-relative p-4 border rounded-3">
+                  <img src="images/sample.jpg" class="img-fluid shadow-sm" alt="product item">
+                  <h6 class="mt-4 mb-0 fw-bold"><a href="buku_terbit/buku1.html">Judul Buku</a></h6>
+                  <div class="review-content d-flex flex-column mt-2">
+                    <p class="text-black-50 mb-1">ISBN: XXX-XXX-XXX-XXX-X</p>
+                    <p class="text-black-50 mb-0">Terbit: Bulan 2024</p>
+                  </div>
+                </div>
+                <a href="buku_terbit/buku1.html">
+                <div class="overlay">
+                  <span class="detail-text">Lihat Detail</span>
+                </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-3 mb-4">
+              <div class="card-container position-relative">
+                <div class="card position-relative p-4 border rounded-3">
+                  <img src="images/sample.jpg" class="img-fluid shadow-sm" alt="product item">
+                  <h6 class="mt-4 mb-0 fw-bold"><a href="buku_terbit/buku1.html">Judul Buku</a></h6>
+                  <div class="review-content d-flex flex-column mt-2">
+                    <p class="text-black-50 mb-1">ISBN: XXX-XXX-XXX-XXX-X</p>
+                    <p class="text-black-50 mb-0">Terbit: Bulan 2024</p>
+                  </div>
+                </div>
+                <a href="buku_terbit/buku1.html">
+                <div class="overlay">
+                  <span class="detail-text">Lihat Detail</span>
+                </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-3 mb-4">
+              <div class="card-container position-relative">
+                <div class="card position-relative p-4 border rounded-3">
+                  <img src="images/sample.jpg" class="img-fluid shadow-sm" alt="product item">
+                  <h6 class="mt-4 mb-0 fw-bold"><a href="buku_terbit/buku1.html">Judul Buku</a></h6>
+                  <div class="review-content d-flex flex-column mt-2">
+                    <p class="text-black-50 mb-1">ISBN: XXX-XXX-XXX-XXX-X</p>
+                    <p class="text-black-50 mb-0">Terbit: Bulan 2024</p>
+                  </div>
+                </div>
+                <a href="buku_terbit/buku1.html">
+                <div class="overlay">
+                  <span class="detail-text">Lihat Detail</span>
+                </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-3 mb-4">
+              <div class="card-container position-relative">
+                <div class="card position-relative p-4 border rounded-3">
+                  <img src="images/sample.jpg" class="img-fluid shadow-sm" alt="product item">
+                  <h6 class="mt-4 mb-0 fw-bold"><a href="buku_terbit/buku1.html">Judul Buku</a></h6>
+                  <div class="review-content d-flex flex-column mt-2">
+                    <p class="text-black-50 mb-1">ISBN: XXX-XXX-XXX-XXX-X</p>
+                    <p class="text-black-50 mb-0">Terbit: Bulan 2024</p>
+                  </div>
+                </div>
+                <a href="buku_terbit/buku1.html">
+                <div class="overlay">
+                  <span class="detail-text">Lihat Detail</span>
+                </div>
+                </a>
+              </div>
+            </div>
+
+
           </div>
-          <div class="col-md-3 posts mb-4">
-            <img src="images/post-item4.jpg" alt="post image" class="img-fluid rounded-3">
-            <a href="index.html" class="fs-6" style="color: #336699">01-01-2024</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">Lorem ipsum dolor sit amet, adipiscing</a></h4>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
-              <span><a class="text-decoration-underline text-black-50" href="index.html">Selengkapnya</a></span>
-            </p>
-          </div>
-          <div class="col-md-3 posts mb-4">
-            <img src="images/post-item4.jpg" alt="post image" class="img-fluid rounded-3">
-            <a href="index.html" class="fs-6" style="color: #336699">01-01-2024</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">Lorem ipsum dolor sit amet, adipiscing</a></h4>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
-              <span><a class="text-decoration-underline text-black-50" href="index.html">Selengkapnya</a></span>
-            </p>
-          </div>
-          <div class="col-md-3 posts mb-4">
-            <img src="images/post-item4.jpg" alt="post image" class="img-fluid rounded-3">
-            <a href="index.html" class="fs-6" style="color: #336699">01-01-2024</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">Lorem ipsum dolor sit amet, adipiscing</a></h4>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
-              <span><a class="text-decoration-underline text-black-50" href="index.html">Selengkapnya</a></span>
-            </p>
-          </div>
-          
-        </div>
       </div>
     </section>
+
+    
+
+
 
 
 
@@ -379,103 +447,116 @@
         </div>
         <div class="row">
           <div class="col-md-3 posts mb-4">
-            <img src="images/post-item2.jpg" alt="post image" class="img-fluid rounded-3">
-            <a href="index.html" class="fs-6" style="color: #336699">01-01-2024</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">Lorem ipsum dolor sit amet, adipiscing</a></h4>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
-              <span><a class="text-decoration-underline text-black-50" href="index.html">Selengkapnya</a></span>
+            <img src="images/post-item5.jpg" alt="post image" class="img-fluid rounded-3 mb-2">
+            <a href="berita/berita1.html" class="fs-6 d-block mb-2" style="color: #336699;">18 November 2024</a>
+            <h4 class="card-title mb-2 text-capitalize text-dark">
+                <a href="berita/berita1.html">Digitech Publishing Luncurkan Program</a>
+            </h4>
+            <p class="mb-2">Digitech Publishing, sebagai unit penerbitan resmi Universitas Teknologi Digital
+                <span><a class="text-decoration-underline text-black-50" href="berita/berita1.html">Selengkapnya</a></span>
             </p>
-          </div>
-          <div class="col-md-3 posts mb-4">
-            <img src="images/post-item2.jpg" alt="post image" class="img-fluid rounded-3">
-            <a href="index.html" class="fs-6" style="color: #336699">01-01-2024</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">Lorem ipsum dolor sit amet, adipiscing</a></h4>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
-              <span><a class="text-decoration-underline text-black-50" href="index.html">Selengkapnya</a></span>
-            </p>
-          </div>
-          <div class="col-md-3 posts mb-4">
-            <img src="images/post-item2.jpg" alt="post image" class="img-fluid rounded-3">
-            <a href="index.html" class="fs-6" style="color: #336699">01-01-2024</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">Lorem ipsum dolor sit amet, adipiscing</a></h4>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
-              <span><a class="text-decoration-underline text-black-50" href="index.html">Selengkapnya</a></span>
-            </p>
-          </div>
-          <div class="col-md-3 posts mb-4">
-            <img src="images/post-item2.jpg" alt="post image" class="img-fluid rounded-3">
-            <a href="index.html" class="fs-6" style="color: #336699">01-01-2024</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">Lorem ipsum dolor sit amet, adipiscing</a></h4>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
-              <span><a class="text-decoration-underline text-black-50" href="index.html">Selengkapnya</a></span>
-            </p>
-          </div>
+        </div>
+        
+        <div class="col-md-3 posts mb-4">
+          <img src="images/post-item2.jpg" alt="post image" class="img-fluid rounded-3 mb-2">
+          <a href="berita/berita2.html" class="fs-6 d-block mb-2" style="color: #336699;">19 November 2024</a>
+          <h4 class="card-title mb-2 text-capitalize text-dark">
+              <a href="berita/berita2.html">Universitas Teknologi Digital</a>
+          </h4>
+          <p class="mb-2">Universitas Teknologi Digital terus berinovasi dalam memperkuat
+              <span><a class="text-decoration-underline text-black-50" href="berita/berita2.html">Selengkapnya</a></span>
+          </p>
+        </div>
+
+        <div class="col-md-3 posts mb-4">
+          <img src="images/post-item3.jpg" alt="post image" class="img-fluid rounded-3 mb-2">
+          <a href="berita/berita3.html" class="fs-6 d-block mb-2" style="color: #336699;">20 November 2024</a>
+          <h4 class="card-title mb-2 text-capitalize text-dark">
+              <a href="berita/berita3.html">Digitech Publishing Tingkatkan Daya</a>
+          </h4>
+          <p class="mb-2">Dalam upaya memperkuat daya saing akademik, Digitech Publishing, unit
+              <span><a class="text-decoration-underline text-black-50" href="berita/berita3.html">Selengkapnya</a></span>
+          </p>
+        </div>
+
+        <div class="col-md-3 posts mb-4">
+          <img src="images/post-item4.jpg" alt="post image" class="img-fluid rounded-3 mb-2">
+          <a href="berita/berita4.html" class="fs-6 d-block mb-2" style="color: #336699;">21 November 2024</a>
+          <h4 class="card-title mb-2 text-capitalize text-dark">
+              <a href="berita/berita4.html">Ratusan Naskah Dosen Universitas</a>
+          </h4>
+          <p class="mb-2">Digitech Publishing, unit penerbitan resmi Universitas Teknologi Digital,
+              <span><a class="text-decoration-underline text-black-50" href="berita/berita4.html">Selengkapnya</a></span>
+          </p>
+        </div>
+        
           
         </div>
       </div>
     </section> 
 
-    <br><br><br><br>
+    <br><br><br>
 
     
 
 
     <footer id="footer" class="padding-large" style="background-color: #e6e7e7;">
-      <div class="container">
-        <div class="row d-flex flex-wrap justify-content-between">
-          <!-- Logo and Description -->
-          <div class="col-lg-4 col-sm-6 mb-3">
-            <div class="footer-menu">
-              <img src="images/Logo Digitech Publishing.png" alt="logo" class="img-fluid mb-3" width="250px">
-              <p>Alamat: Jl. Cibogo Indah III, Kel. Mekarjaya, Kec. Rancasari, Kota Bandung, Prov. Jawa Barat, 40292</p>
-              <div class="social-links mt-3">
-                <ul class="d-flex list-unstyled gap-1">
-                  <li>
-                    <a href="#" class="d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background-color: #4267B2; border-radius: 50%;">
-                      <svg class="facebook" fill="#fff" width="20" height="20">
-                        <use xlink:href="#facebook" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background-color: #E4405F; border-radius: 50%;">
-                      <svg class="instagram" fill="#fff" width="20" height="20">
-                        <use xlink:href="#instagram" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background-color: #0077B5; border-radius: 50%;">
-                      <svg class="linkedin" fill="#fff" width="20" height="20">
-                        <use xlink:href="#linkedin" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background-color: #FF0000; border-radius: 50%;">
-                      <svg class="youtube" fill="#fff" width="20" height="20">
-                        <use xlink:href="#youtube" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+        <div class="container">
+          <div class="row d-flex flex-wrap justify-content-between">
+            <!-- Logo and Description -->
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="footer-menu">
+                <img src="images/Logo Digitech Publishing.png" alt="logo" class="img-fluid mb-3" width="250px">
+                <p>Alamat: Jl. Cibogo Indah III, Kel. Mekarjaya, Kec. Rancasari, Kota Bandung, Prov. Jawa Barat, 40292</p>
+                <div class="social-links mt-3">
+                  <ul class="d-flex list-unstyled gap-1">
+                    <li>
+                      <a href="https://www.facebook.com/digitechuniversity?mibextid=ZbWKwL" class="d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background-color: #4267B2; border-radius: 50%;">
+                        <svg class="facebook" fill="#fff" width="20" height="20">
+                          <use xlink:href="#facebook" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://Instagram.com/digitechuniversity.official" class="d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background-color: #E4405F; border-radius: 50%;">
+                        <svg class="instagram" fill="#fff" width="20" height="20">
+                          <use xlink:href="#instagram" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/digitechuniversity/?originalSubdomain=id" class="d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background-color: #0077B5; border-radius: 50%;">
+                        <svg class="linkedin" fill="#fff" width="20" height="20">
+                          <use xlink:href="#linkedin" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://youtube.com/@digitechuniversity?si=X-PeQ-ZV-V2P_FyO" class="d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background-color: #FF0000; border-radius: 50%;">
+                        <svg class="youtube" fill="#fff" width="20" height="20">
+                          <use xlink:href="#youtube" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Contact Us -->
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="footer-menu contact-item">
+                <h5 class="widget-title text-capitalize pb-2"><b>Contact Us</b></h5>
+                <p>Email: 
+                  <a href="mailto:publishing@digitechuniversity.ac.id" class="text-decoration-underline">publishing@digitechuniversity.ac.id</a>
+                </p>
+                <p>WhatsApp: 0818618611 / 08618618622</p>
               </div>
             </div>
           </div>
-    
-          <!-- Contact Us -->
-          <div class="col-lg-4 col-sm-6 mb-3">
-            <div class="footer-menu contact-item">
-              <h5 class="widget-title text-capitalize pb-2"><b>Contact Us</b></h5>
-              <p>Email: 
-                <a href="mailto:publishing@digitechuniversity.ac.id" class="text-decoration-underline">publishing@digitechuniversity.ac.id</a>
-              </p>
-              <p>WhatsApp: 0818618611 / 08618618622</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </footer>    
+      </footer>   
+              
         
     <div id="footer-bottom" class="py-2">
       <div class="container text-center">
@@ -493,5 +574,36 @@
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+        loop: true, // Mengaktifkan looping slide
+        slidesPerView: 1, // Menampilkan hanya 1 slide dalam satu waktu
+        spaceBetween: 0, // Tidak ada jarak antar slide
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3500, // Slide otomatis berganti setiap 3 detik
+          disableOnInteraction: false,
+        },
+        effect: 'slide', // Efek transisi standar
+        speed: 700, // Durasi transisi dalam milidetik
+      });
+    </script>
+    
+    
+
+
   </body>
 </html>
