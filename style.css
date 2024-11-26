@@ -1256,10 +1256,10 @@ th{
 }
 
 /* Media Query untuk Mobile */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #billboard {
-    height: auto; /* Tinggi menyesuaikan isi untuk layar kecil */
-    padding: 0; /* Hapus padding tambahan */
+    height: 400px; /* Mengurangi tinggi untuk layar kecil */
+    margin: 0 20px; /* Mengurangi margin untuk perangkat mobile */
   }
 
   .swiper-slide img {
@@ -2039,19 +2039,6 @@ form button:hover {
   margin-bottom: 18px;
 }
 
-.sectionnns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: flex-start;
-}
-
-.sectionnns img {
-  width: 100%; /* Agar gambar mengisi elemen dengan lebar penuh */
-  max-width: 200px; /* Membatasi lebar gambar */
-  height: auto;
-  margin: 20px;
-}
 
 /* Untuk tampilan mobile (layar kecil) */
 @media (max-width: 767px) {
