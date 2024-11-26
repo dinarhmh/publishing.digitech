@@ -1237,36 +1237,29 @@ th{
   color: var(--gray-color-500);
 }
 
-/* Styling Billboard */
-#billboard {
-  height: auto; /* Tetap gunakan viewport tinggi untuk desktop */
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+/* Hapus margin dan padding dari semua elemen terkait */
+#billboard, .swiper-container, .swiper-wrapper, .swiper-slide, .swiper-slide img {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important; /* Pastikan elemen penuh lebar */
+  max-width: 100% !important; /* Hindari overflow */
+  box-sizing: border-box; /* Pastikan padding tidak memengaruhi ukuran */
 }
 
-/* Styling Gambar di Slide */
+/* Pastikan gambar mengikuti ukuran layar */
 .swiper-slide img {
-  object-fit: cover;
-  width: 100%;
-  height: auto; /* Default untuk mempertahankan proporsi gambar */
-  max-height: auto; /* Batasi tinggi maksimum */
+  display: block; /* Hindari margin default inline elements */
+  width: 100vw !important; /* Gunakan seluruh viewport untuk mobile */
+  height: auto; /* Jaga rasio aspek */
 }
 
-/* Media Query untuk Mobile */
-@media (max-width: 767px) {
-  #billboard {
-    height: auto; /* Allow height to adjust */
-  }
-  .swiper-container {
-    height: auto; /* Adjust for content */
-  }
-  .swiper-slide img {
-    height: auto;
+/* Media Queries untuk Mobile */
+@media (max-width: 768px) {
+  #billboard, .swiper-container {
+    width: 100vw !important; /* Container harus memanfaatkan viewport penuh */
   }
 }
+
 
 
 
