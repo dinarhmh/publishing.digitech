@@ -1461,12 +1461,25 @@ strong {
   margin: 20px 0;
 }
 
+
 .section-title {
-  text-align: center;
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.section-title h3 {
+  margin: 0;
+  font-size: 1.5rem; /* Sesuaikan ukuran font judul */
+}
+
+.section-title .btn {
+  font-size: 0.875rem; /* Ukuran teks tombol */
+  padding: 0.5rem 1rem; /* Sesuaikan ukuran tombol */
+  text-transform: uppercase; /* Opsional, jika ingin semua huruf kapital */
+  white-space: nowrap; /* Supaya tombol tidak terpotong */
+}
+
 
 .visi-misi-content {
   display: flex;
